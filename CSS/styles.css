@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e4e4e4;
+}
+
+.backVid {
+  height: 100vh;
+  width: 100%;
+  background: #cccccc;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.testVideo .findVid {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.findVid {
+  width: 90%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .intContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 98.5%;
+  width: 100%;
+}
+.content .intContent .headerContent {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: black;
+  border-radius: 30px;
+  padding: 5px 5px;
+  width: 98%;
+  max-width: 3000px;
+}
+.content .intContent .headerContent > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.content .intContent .headerContent > :nth-child(1) > div {
+  color: white;
+  height: 100%;
+  padding: 10px 27.5px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.content .intContent .headerContent > :nth-child(1) > :nth-child(1) {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+}
+.content .intContent .headerContent > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content .intContent .headerContent > :nth-child(2) div {
+  height: 100%;
+  cursor: pointer;
+}
+.content .intContent .headerContent > :nth-child(2) > :nth-child(1) {
+  color: white;
+  background: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 27.5px;
+  display: none;
+}
+.content .intContent .headerContent > :nth-child(2) > :nth-child(2), .content .intContent .headerContent > :nth-child(2) > :nth-child(3) {
+  background: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+.content .intContent .headerContent > :nth-child(2) > :nth-child(2) div, .content .intContent .headerContent > :nth-child(2) > :nth-child(3) div {
+  width: 100%;
+  max-width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+.content .intContent .headerContent > :nth-child(2) > :nth-child(2) div img, .content .intContent .headerContent > :nth-child(2) > :nth-child(3) div img {
+  width: 100%;
+}
+.content .intContent .headerContent > :nth-child(2) > :nth-child(4) {
+  color: white;
+  background: black;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 10px 27.5px;
+}

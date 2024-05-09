@@ -1,0 +1,34 @@
+https://www.instagram.com/p/Cs8-jTVNOka/?img_index=1
+
+
+<div class="carousel">
+				<div class="carousel-inner">
+					<p>SCIENTIST  MAKE OBSERVATIONS OF THE NATURAL WORLD AND IDENTIFY A SPECIFIC PHENOMENON OR QUESTION OF
+						INTEREST • SCIENTIS ANALYSE THE COLLECTED DATA USING STATISTICAL AND ANALYTICAL METHODS.</p>
+				</div>
+			  </div>
+
+ .carousel {
+                overflow: hidden;
+                width: 100%;
+                color: white;
+                background: rgb(0, 0, 0);
+                border-radius: 25px;
+                p{
+                    font-size: 10.5px;
+                    letter-spacing: .5px;
+                    font-family: 'Plus Jakarta Sans', sans-serif;
+                }
+              }
+              .carousel-inner {
+                animation: carousel-scroll 30s linear infinite;
+                white-space: nowrap;
+              }
+              @keyframes carousel-scroll {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-100%);
+                }
+              }
