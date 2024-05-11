@@ -8,6 +8,8 @@ $azulOscuro : #072350;
 $casiBlanco : #e1e1e1;
 $gris : #2c2c2c;
 
+// MENEJADOR DE BODY
+
 body{
     margin: 0;
     padding: 0;
@@ -20,6 +22,10 @@ body{
     font-family: "Plus Jakarta Sans", sans-serif;
     overflow: hidden;
 }
+
+// MENEJADOR DE BODY ----------------------
+
+// MENEJADOR DE VIDEOS Y ANIMACIONES
 
 .backVid{
     height: 100vh;
@@ -54,6 +60,10 @@ body{
         opacity: 0%;
     }
 }
+
+// MENEJADOR DE VIDEOS Y ANIMACIONES ----------------------
+
+// MENEJADOR DE MENU OVERLAY
 
 .overlayMenu{
     position: absolute;
@@ -173,6 +183,10 @@ body{
     }
 }
 
+// MENEJADOR DE MENU OVERLAY ----------------------
+
+// MENEJADOR DE MENU INTCONTENT
+
 .content{
     position: absolute;
     z-index: 10;
@@ -191,6 +205,10 @@ body{
         width: 98.5%;
     }
 }
+
+// MENEJADOR DE MENU INTCONTENT ----------------------
+
+// MENEJADOR DE HEADER
 
 .content{
     .intContent{
@@ -275,7 +293,6 @@ body{
     }
 }
 
-
 @media (max-width: 800px){
     .content{
         .intContent{
@@ -335,22 +352,42 @@ body{
     }
 }
 
+// MENEJADOR DE HEADER ----------------------
+
+// MANEJADOR DE MAIN
+
 .content{
     .intContent{
         main{
             display: flex;
             flex-flow: column wrap;
-            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            width: 100%;
+        }
+    }
+}
+
+// MANEJADOR DE MAIN ----------------------
+
+// MANEJADOR DE SECTION
+
+.content{
+    .intContent{
+        main{
             section{
-                width: 99.8%;
                 border-radius: 25px;
-                margin: 0 auto;
                 max-width: 3000px;
                 backdrop-filter: blur(8px);
                 cursor: pointer;
                 position: relative;
                 background-image: linear-gradient(to right, rgba(7, 35, 80, 0.5), rgba(203, 203, 203, .5));
                 z-index: 1;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                width: 100%;
                 >:nth-child(1){
                     margin: 0 auto;
                     width: 95%;
@@ -359,15 +396,12 @@ body{
                     align-items: center;
                     justify-content: space-between;
                     align-items: center;
-                    padding: 15px 0px;
-                    h2{
-                        all: unset;
-                    }
+                    padding: 10px 0px;
                     >:nth-child(1){
                         display: flex;
                         flex-flow: row wrap;
                         align-items: center;
-                        gap: 1.25rem;
+                        gap: 1.5rem;
                         >:nth-child(1){
                             display: flex;
                             flex-flow: row wrap;
@@ -377,8 +411,8 @@ body{
                                 border-radius: 50%;
                                 position: relative;
                                 overflow: hidden;
-                              }
-                              .circle::before {
+                            }
+                            .circle::before {
                                 content: "";
                                 position: absolute;
                                 top: -1px;
@@ -395,11 +429,14 @@ body{
                             }
                         }
                         >:nth-child(2){
+                            display: flex;
+                            height: auto;
                             h2{
+                                all: unset;
                                 letter-spacing: .75rem;
-                                font-weight: 600;
+                                font-weight: 500;
                                 font-size: 1.95rem;
-                                color: $casiBlanco;
+                                color: white;
                             }
                         }
                     }
@@ -449,15 +486,6 @@ body{
                 section{
                     >:nth-child(1){
                         >:nth-child(1){
-                            >:nth-child(1){
-                                .circle {
-                                    width: 28px;
-                                    height: 28px;
-                                  }
-                                .cr2{
-                                    margin-left: -16px;
-                                }
-                            }
                             >:nth-child(2){
                                 h2{
                                     letter-spacing: 0.55rem;
@@ -487,21 +515,11 @@ body{
                         display: flex;
                         flex-flow: row nowrap;
                         >:nth-child(1){
-                            >:nth-child(1){
-                                .circle {
-                                    width: 22.5px;
-                                    height: 22.5px;
-                                  }
-                                .cr2{
-                                    margin-left: -13px;
-                                }
-                            }
                             >:nth-child(2){
-                                width: 25%;
+                                width: 50%;
                                 h2{
                                     letter-spacing: 0.45rem;
                                     font-size: 1.25rem;
-
                                 }
                             }
                         }
@@ -517,3 +535,82 @@ body{
         }
     }
 }
+
+// MANEJADOR DE NAV ----------------------
+
+.content{
+    .intContent{
+        main{
+            nav{
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%;
+                gap: .5rem;
+                max-width: 3000px;
+                background: white;
+                >:nth-child(1){
+                    width: 50%;
+                    background: rgba(1, 146, 239, 1);
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    place-content: center;
+                    height: auto;
+                    >div{
+                        height: 90%;
+                        width: 95%;
+                        .cajaNum1{
+                            display: flex;
+                            flex-flow: column nowrap;
+                            gap: 2rem;
+                            height: 100%;
+                            .textArea{
+                                display: flex;
+                                flex-flow: column wrap;
+                                justify-content: space-between;
+                                gap: 1rem;
+                                h2, p{
+                                    all: unset;
+                                }
+                            }
+                            .line{
+                                width: 100%;
+                                height: 2px;
+                                border-radius: 20px;
+                                background: linear-gradient(to right, rgba(7, 35, 80, 1), rgba(203, 203, 203, .2));
+                                backdrop-filter: blur(7px);
+                            }
+                            .textArea2{
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    width: 50%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    gap: .5rem;
+                    background: rgba(1, 146, 239, 1);
+                    >div{
+                        width: 50%;
+                        border-radius: 30px;
+                        background: orange;
+                        display: flex;
+                        align-items: center;
+                        place-content: center;
+                        height: auto;
+                        >div{
+                            background: red;
+                            height: 90%;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MANEJADOR DE NAV ----------------------
+
+

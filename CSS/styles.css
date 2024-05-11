@@ -382,12 +382,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  width: 100%;
 }
+
 .content .intContent main section {
-  width: 99.8%;
   border-radius: 25px;
-  margin: 0 auto;
   max-width: 3000px;
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -396,6 +402,17 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 35, 80, 0.5)), to(rgba(203, 203, 203, 0.5)));
   background-image: linear-gradient(to right, rgba(7, 35, 80, 0.5), rgba(203, 203, 203, 0.5));
   z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 .content .intContent main section > :nth-child(1) {
   margin: 0 auto;
@@ -414,10 +431,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
-}
-.content .intContent main section > :nth-child(1) h2 {
-  all: unset;
+  padding: 10px 0px;
 }
 .content .intContent main section > :nth-child(1) > :nth-child(1) {
   display: -webkit-box;
@@ -430,7 +444,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) {
   display: -webkit-box;
@@ -464,11 +478,18 @@ body {
 .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .cr2 {
   margin-left: -20px;
 }
+.content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
 .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
+  all: unset;
   letter-spacing: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.95rem;
-  color: #e1e1e1;
+  color: white;
 }
 .content .intContent main section > :nth-child(1) > :nth-child(2) > :nth-child(1) {
   width: 100%;
@@ -506,13 +527,6 @@ body {
 }
 
 @media (max-width: 800px) {
-  .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .circle {
-    width: 28px;
-    height: 28px;
-  }
-  .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .cr2 {
-    margin-left: -16px;
-  }
   .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
     letter-spacing: 0.55rem;
     font-size: 1.45rem;
@@ -532,15 +546,8 @@ body {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .circle {
-    width: 22.5px;
-    height: 22.5px;
-  }
-  .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .cr2 {
-    margin-left: -13px;
-  }
   .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(2) {
-    width: 25%;
+    width: 50%;
   }
   .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(2) h2 {
     letter-spacing: 0.45rem;
@@ -550,4 +557,100 @@ body {
     max-width: 17.5px;
     padding: 2.5px;
   }
+}
+.content .intContent main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  gap: 0.5rem;
+  max-width: 3000px;
+  background: white;
+}
+.content .intContent main nav > :nth-child(1) {
+  width: 50%;
+  background: rgb(1, 146, 239);
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  height: auto;
+}
+.content .intContent main nav > :nth-child(1) > div {
+  height: 90%;
+  width: 95%;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 2rem;
+  height: 100%;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea h2, .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea p {
+  all: unset;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .line {
+  width: 100%;
+  height: 2px;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(rgb(7, 35, 80)), to(rgba(203, 203, 203, 0.2)));
+  background: linear-gradient(to right, rgb(7, 35, 80), rgba(203, 203, 203, 0.2));
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+.content .intContent main nav > :nth-child(2) {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 0.5rem;
+  background: rgb(1, 146, 239);
+}
+.content .intContent main nav > :nth-child(2) > div {
+  width: 50%;
+  border-radius: 30px;
+  background: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  height: auto;
+}
+.content .intContent main nav > :nth-child(2) > div > div {
+  background: red;
+  height: 90%;
+  width: 90%;
 }
