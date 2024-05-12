@@ -395,8 +395,8 @@ body {
 .content .intContent main section {
   border-radius: 25px;
   max-width: 3000px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   cursor: pointer;
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 35, 80, 0.5)), to(rgba(203, 203, 203, 0.5)));
@@ -471,8 +471,8 @@ body {
   width: 50%;
   border: 5px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.8);
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
+  -webkit-filter: blur(7px);
+          filter: blur(7px);
   z-index: -1;
 }
 .content .intContent main section > :nth-child(1) > :nth-child(1) > :nth-child(1) .cr2 {
@@ -515,8 +515,8 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(7, 35, 80, 0.8)), to(rgba(203, 203, 203, 0.8)));
   background-image: linear-gradient(to right, rgba(7, 35, 80, 0.8), rgba(203, 203, 203, 0.8));
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   z-index: -1;
   -webkit-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
@@ -569,11 +569,12 @@ body {
   width: 100%;
   gap: 0.5rem;
   max-width: 3000px;
-  background: white;
 }
 .content .intContent main nav > :nth-child(1) {
   width: 50%;
-  background: rgb(1, 146, 239);
+  background: rgba(243, 243, 243, 0.85);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -583,10 +584,15 @@ body {
           align-items: center;
   place-content: center;
   height: auto;
+  padding: 20px 0px;
+}
+.content .intContent main nav > :nth-child(1):hover {
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
 }
 .content .intContent main nav > :nth-child(1) > div {
-  height: 90%;
-  width: 95%;
+  height: 100%;
+  width: 90%;
 }
 .content .intContent main nav > :nth-child(1) > div .cajaNum1 {
   display: -webkit-box;
@@ -598,6 +604,9 @@ body {
           flex-flow: column nowrap;
   gap: 2rem;
   height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea {
   display: -webkit-box;
@@ -612,10 +621,36 @@ body {
           justify-content: space-between;
   gap: 1rem;
 }
-.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea h2, .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea p {
-  all: unset;
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea span {
+  text-decoration: underline;
 }
-.content .intContent main nav > :nth-child(1) > div .cajaNum1 .line {
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea h2 {
+  all: unset;
+  color: #072350;
+  font-weight: 800;
+  font-size: 2rem;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.5rem;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine p {
+  all: unset;
+  color: #072350;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine p span {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine .line {
   width: 100%;
   height: 2px;
   border-radius: 20px;
@@ -623,6 +658,47 @@ body {
   background: linear-gradient(to right, rgb(7, 35, 80), rgba(203, 203, 203, 0.2));
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
+  position: relative;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(1) span {
+  color: #072350;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #072350;
+  border-radius: 50%;
+  padding: 4px;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(2) > div {
+  width: 100%;
+  max-width: 16.5px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(2) > div img {
+  width: 100%;
 }
 .content .intContent main nav > :nth-child(2) {
   width: 50%;
@@ -634,12 +710,10 @@ body {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   gap: 0.5rem;
-  background: rgb(1, 146, 239);
 }
 .content .intContent main nav > :nth-child(2) > div {
   width: 50%;
   border-radius: 30px;
-  background: orange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,9 +722,284 @@ body {
           align-items: center;
   place-content: center;
   height: auto;
+  padding: 20px 0px;
 }
 .content .intContent main nav > :nth-child(2) > div > div {
-  background: red;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 85%;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  gap: 0.5rem;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 h2, .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 h3, .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 p, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 h2, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 h3, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 p {
+  all: unset;
+  color: white;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1), .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) {
+  height: 50%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2), .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) h3, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) h3 {
+  font-size: 1.2rem;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) p, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) p span, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1) > :nth-child(1) {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(1) > div {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+  width: 100%;
+  max-width: 45px;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(2) > div img {
+  width: 100%;
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(2) {
+  font-size: 0.9rem;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+  font-weight: 400;
+}
+.content .intContent main nav > :nth-child(2) > :nth-child(1) {
+  background: rgba(18, 87, 140, 0.8);
+  -webkit-backdrop-filter: blur(0.75px);
+          backdrop-filter: blur(0.75px);
+}
+.content .intContent main nav > :nth-child(2) > :nth-child(2) {
+  background: #072350;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .content .intContent main nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .content .intContent main nav > :nth-child(1) {
+    width: 100%;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 {
+    gap: 1rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea {
+    gap: 0.75rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea h2 {
+    font-size: 1.5rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine {
+    gap: 1rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine p {
+    font-size: 0.8rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(1) span {
+    font-size: 0.75rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(2) > div {
+    width: 100%;
+    max-width: 15px;
+  }
+  .content .intContent main nav > :nth-child(2) {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 {
+    gap: 0rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) h3, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) h3 {
+    font-size: 1rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) p, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+    font-size: 0.8rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1) {
+    height: 25%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1) > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) {
+    height: 75%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) {
+    height: 25%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(1) > div {
+    height: 12.5px;
+    width: 12.5px;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+    max-width: 35px;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(2) {
+    display: none;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) {
+    height: 75%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .content .intContent main nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .content .intContent main nav > :nth-child(1) {
+    width: 100%;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 {
+    gap: 1rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea {
+    gap: 0.75rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea h2 {
+    font-size: 1.5rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine {
+    gap: 1rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .contentLine p {
+    font-size: 0.8rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(1) span {
+    font-size: 0.75rem;
+  }
+  .content .intContent main nav > :nth-child(1) > div .cajaNum1 .textArea2 > :nth-child(2) > div {
+    width: 100%;
+    max-width: 15px;
+  }
+  .content .intContent main nav > :nth-child(2) {
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 {
+    gap: 0rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) h3, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) h3 {
+    font-size: 1rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) p, .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+    font-size: 0.8rem;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1) {
+    height: 25%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(1) > :nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum2 > :nth-child(2) {
+    height: 75%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) {
+    height: 25%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(1) > div {
+    height: 12.5px;
+    width: 12.5px;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(1) > :nth-child(2) > div {
+    max-width: 35px;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(1) > :nth-child(2) {
+    display: none;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) {
+    height: 75%;
+  }
+  .content .intContent main nav > :nth-child(2) > div > div .cajaNum3 > :nth-child(2) p {
+    font-size: 0.8rem;
+  }
 }
