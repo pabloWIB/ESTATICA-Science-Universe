@@ -1,7 +1,6 @@
 $(function(){
     setTimeout(function(){
         $("#video").addClass("animationVideo1");
-		$(".footerContent").addClass("mainContentrAnimation");
     }, 700);
 });
 
@@ -9,8 +8,15 @@ $(function(){
     setTimeout(function(){
         $("#headerContent").addClass("navBarAnimation");
 		$(".mainContent").addClass("mainContentrAnimation");
-    }, 500);
+    }, 2500);
 });
+
+$(function(){
+    setTimeout(function(){
+		$(".footerContent").addClass("mainContentrAnimation");
+    }, 2700);
+});
+
 
 $(function(){
 	$(".Menu").click(function(e){
